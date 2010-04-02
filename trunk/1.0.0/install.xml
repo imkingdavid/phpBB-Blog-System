@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="modx.prosilver.en.xsl"?>
+<!--For security purposes, please check: http://www.phpbb.com/mods/ for the latest version of this MOD. Although MODs are checked before being allowed in the MODs Database there is no guarantee that there are no security problems within the MOD. No support will be given for MODs not found within the MODs Database which can be found at http://www.phpbb.com/mods/-->
+<mod xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.phpbb.com/mods/xml/modx-1.2.4.xsd">
+<header>
+	<license>http://opensource.org/licenses/gpl-license.php GNU General Public License v2</license>
+	<title lang="en">phpBB Blog System</title>
+	
+	<description lang="en">This MOD adds a blog to your forum, to which users with the appropriate permissions can post and comment on posts. This is not to be confused with EXreaction's User Blog MOD.</description>
+
+	<author-notes lang="en">This MOD is currently in the ALPHA stage and should NOT be used in a live environment. You are, however, welcome to use it on a test board.
+	After installation, point your browser to /blog_install.php and follow the onscreen instructions.
+	No update will be provided between ALPHA versions unless stated otherwise. You must uninstall and reinstall to update.
+	Support is available through the phpBB.com development topic, as well as my support board: http://www.forummafia.2x.nu/phpbbmods/
+	If you would like to make a donation for my work done on this MOD as well as other MODs, you may do so by going to the demo/test board (http://forummafia.2x.nu/phpbbmods/) and clicking the Donate button in the header. All donations are voluntary. Upon donating $5 or more, you will be added to the $upporters group, provided you tell me your forum username when you donate.</author-notes>
+
+	<author-group>
+		<author>
+			<username>imkingdavid</username>
+			<realname>David King</realname>
+			<homepage>http://forummafia.2x.nu/phpbbmods/</homepage>
+			<email>imkingdavid@gmail.com</email>
+		</author>
+	</author-group>
+
+	<mod-version>0.0.8a</mod-version>
+
+	<installation>
+		<level>easy</level>
+		<time>300</time>
+		<target-version>3.0.5</target-version>
+	</installation>
+	<history>
+		<entry>
+			<date>2009-12-13</date>
+			<rev-version>0.0.8a</rev-version>
+			<changelog lang="en">
+				<change>[fix] Fixed the Version checker using a port of phpBB's version check system</change>
+				<change>[fix] Fixed display issues for blog index page</change>
+				<change>[change] Added automatic redirect after blog and comment deletion</change>
+				<change>[change] Added name of blog and link in navlinks when viewing blog</change>
+				<change>[change] Moved hard-coded text to language variables.</change>
+			</changelog>
+		</entry>
+		<entry>
+			<date>2009-11-15</date>
+			<rev-version>0.0.7a</rev-version>
+			<changelog lang="en">
+				<change>[fix] Various bugfixes</change>
+				<change>[change] New method of truncating blog message previews</change>
+			</changelog>
+		</entry>
+		
+		<entry>
+			<date>2009-10-10</date>
+			<rev-version>0.0.6a</rev-version>
+			<changelog lang="en">
+				<change>[fix] Fixed utf8 support</change>
+				<change>[fix] Fixed pagination on comments</change>
+				<change>[fix] Username mixup when editing someone else's post</change>
+				<change>[fix] Added horizontal scroll-bar when a single word or an image in a comment is to large so that it doesn't stretch the page unnecessarily</change>
+				<change>[new] Link in overall_header.html to blog.php using Overall Blog Title (now definable in ACP)</change>
+				<change>[new] Option to disable comments for specific blog posts</change>
+				<change>[new] You can now change the limit number of characters before "...(view more)" is shown via ACP module</change>
+			</changelog>
+		</entry>
+		
+		<entry>
+			<date>2009-10-09</date>
+			<rev-version>0.0.5a</rev-version>
+			<changelog lang="en">
+				<change>[fix] Fixed more issues with multi-byte characters becoming ??.</change>
+				<change>[fix] Fix various display and functionality bugs</change>
+				<change>[change] Revamped posting/editing screen that looks like the default phpBB posting screen.</change>
+				<change>[change] Revamped ACP Settings module.</change>
+				<change>[new] Integrated with phpBB navigation bar (Board index - {Category})</change>
+			</changelog>
+		</entry>
+
+		<entry>
+			<date>2009-10-07</date>
+			<rev-version>0.0.4a</rev-version>
+			<changelog lang="en">
+				<change>[fix] Error when editing comments.</change>
+				<change>[fix] Issue with multi-byte characters returning question marks has been resolved.</change>
+				<change>[change] Added link to phpBB.com development topic for downloading the latest version.</change>
+				<change>[new] Pagination for blog posts and comments.</change>
+			</changelog>
+		</entry>
+
+		<entry>
+			<date>2009-10-05</date>
+			<rev-version>0.0.3a</rev-version>
+			<changelog lang="en">
+				<change>[fix] Set default value to submit/reset buttons on comment and blog posting screens.</change>
+				<change>[fix] Fixed message shown when user posts unapproved comment.</change> 
+				<change>[fix] Fixed installation script to add the correct ACP modules.</change>
+				<change>[new] Native version check module added to ACP, similar to phpBB's native version check.</change>
+			</changelog>
+		</entry>
+		
+		<entry>
+			<date>2009-10-04</date>
+			<rev-version>0.0.2a</rev-version>
+			<changelog lang="en">
+				<change>[fix] Removed extraneous tag in blog_body.html that was causing a display error in Internet Explorer 8</change>
+				<change>[fix] Fixed error when editing comments</change>
+				<change>[new] Added copyright at the bottom. You may alter the text, but leave the link intact.</change>
+			</changelog>
+		</entry>
+		
+		<entry>
+			<date>2009-10-02</date>
+			<rev-version>0.0.1a</rev-version>
+			<changelog lang="en">
+				<change>[new] Released first ALPHA version of MOD.</change>
+			</changelog>
+		</entry>
+		
+		<entry>
+			<date>2009-09-03</date>
+			<rev-version>0.0.0 (DEV)</rev-version>
+			<changelog lang="en">
+				<change>Begun development and idea phase.</change>
+			</changelog>
+		</entry>
+	</history>
+</header>
+
+<action-group>
+	<copy>
+		<file from="root/*.*" to="*.*" />
+	</copy>
+	
+	<open src="includes/constants.php">
+		<edit>
+			  <find><![CDATA[// Additional tables]]></find>
+			  <action type="after-add"><![CDATA[//phpBB Blog System
+define('BLOGS_TABLE', $table_prefix . 'blog');
+define('BLOG_CMNTS_TABLE', $table_prefix . 'blog_comments');
+define('BLOG_CATS_TABLE', $table_prefix . 'blog_categories');]]></action>
+		</edit>
+	</open>
+	
+	<open src="includes/functions.php">
+		<edit>
+			<find><![CDATA['SITE_LOGO_IMG'			=> $user->img('site_logo'),]]></find>
+			<action type="after-add"><![CDATA[		//BLOG SYSTEM MOD
+		'U_BLOG'	=> append_sid("{$phpbb_root_path}blog.$phpEx"),
+		'OVERALL_BLOG_TITLE' => $config['blog_title'],
+		//END BLOG SYSTEM MOD]]></action>
+		</edit>
+	</open>
+	
+	<open src="styles/prosilver/template/overall_header.html">
+		<edit>
+			<find><![CDATA[<li class="icon-faq"><a href="{U_FAQ}" title="{L_FAQ_EXPLAIN}">{L_FAQ}</a></li>]]></find>
+			<action type="before-add"><![CDATA[<li class="icon-ucp"><a href="{U_BLOG}" title="{OVERALL_BLOG_TITLE}">{OVERALL_BLOG_TITLE}</a></li>]]></action>
+		</edit>
+	</open>
+	<diy-instructions lang="en"><![CDATA[
+	1) Make sure you have copied all files from root/*.* to the {phpBB root directory}/*.*, and that all file edits have been successfully performed. *If using AutoMOD, these should all be done instantly, but it's still always good to double check.!
+	2) Navigate your browser to /blog_install.php - Once that runs, you are done. You may now remove that file and go to ACP. You should see "Blog" as a new tab at the end of the list of ACP Modules. Enjoy! *Note that this file can also be used to uninstall, should you run into trouble. Although realize that this does not undo file edits, so you will need to use AutoMOD for that. In later versions, you will also be able to update using this file (and use AutoMOD for file edit updates).
+	3)If you encounter any issues with the MOD, you are welcome to contact me at imkingdavid@gmail.com or go the the development topic at phpBB.com and let me know so that I can fix them!.
+	
+	Development of MODs occurs during my free time. While I enjoy coding, I have little incentive to commit a lot of time to it. However, if I recieve donations I am more willing to do more work to compensate. If you feel willing to donate, please follow the instructions at the test board (http://forummafia.2x.nu/phpbbmods/topicmultimod/). Thanks!]]>
+	</diy-instructions>
+</action-group>
+</mod>
